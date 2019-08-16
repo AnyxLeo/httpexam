@@ -1,0 +1,17 @@
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\obj\Debug\httpexam.csprojAssemblyReference.cache
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\obj\Debug\httpexam.csproj.CoreCompileInputs.cache
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\httpexam.exe.config
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\httpexam.exe
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\httpexam.pdb
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\EmbedIO.dll
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\Swan.dll
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\Swan.Lite.dll
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\EmbedIO.xml
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\Swan.xml
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\Swan.Lite.xml
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\obj\Debug\httpexam.csproj.CopyComplete
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\obj\Debug\httpexam.exe
+C:\Users\Anyx\Documents\Unosquare\httpexam\httpexam_\httpexam\obj\Debug\httpexam.pdb
