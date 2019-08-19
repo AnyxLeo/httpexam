@@ -1,6 +1,9 @@
 ﻿using EmbedIO;
 using EmbedIO.Routing;
+<<<<<<< HEAD
 using EmbedIO.Utilities;
+=======
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
 using Swan.Net;
 using System;
 using System.Collections.Generic;
@@ -12,6 +15,7 @@ namespace httpexam
 {
     public class CustomModule : IWebModule
     {
+<<<<<<< HEAD
         private RouteMatcher _routeMatcher;
         protected string LogSource { get; }
         public string BaseRoute { get; }
@@ -21,6 +25,9 @@ namespace httpexam
             _routeMatcher = RouteMatcher.Parse(baseRoute, true);
             LogSource = GetType().Name;
         }
+=======
+        public string BaseRoute => throw new NotImplementedException();
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
 
         public bool IsFinalHandler => throw new NotImplementedException();
 
@@ -48,18 +55,35 @@ namespace httpexam
             throw HttpException.BadRequest();
         }
 
+<<<<<<< HEAD
         public RouteMatch MatchUrlPath(string urlPath) => _routeMatcher.Match(urlPath);
 
         public void Start(CancellationToken cancellationToken)
         {
             
+=======
+        public RouteMatch MatchUrlPath(string urlPath)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Start(CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
         }
 
         public async Task<object> GetValue(string code)
         {
             var currencies = await JsonClient.Get<Exchangerates>("https://api.exchangeratesapi.io/latest?base=USD");
+<<<<<<< HEAD
             
             return new { CurrencyCode = code, Value = currencies.rates.TryGetValue(code, out var o) };
+=======
+
+
+            return new { CurrencyCode = code, Value = currencies.Rates.TryGetValue(code, out var value) };
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
         }
 
         private List<Currency> CurrencyByDates = new List<Currency>();
@@ -121,7 +145,11 @@ namespace httpexam
 
             var currencies = await JsonClient.Get<Exchangerates>("https://api.exchangeratesapi.io/latest?base=USD");
 
+<<<<<<< HEAD
             if (currencies.rates.ContainsKey(code))
+=======
+            if (currencies.Rates.ContainsKey(code))
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
             {
                 context.Response.ContentLength64 = 1;
                 return context.Response;
@@ -137,10 +165,19 @@ namespace httpexam
         {
 
             var currencies = await JsonClient.Get<Exchangerates>("https://api.exchangeratesapi.io/latest?base=USD");
+<<<<<<< HEAD
             var keys = currencies.rates.Keys.ToList();
+=======
+            var keys = currencies.Rates.Keys.ToList();
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
             context.Response.Headers.Add("X-Currencies", string.Join(",", keys));
 
             return context.Response;
         }
+<<<<<<< HEAD
     }    
+=======
+    }
+    }
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
 }

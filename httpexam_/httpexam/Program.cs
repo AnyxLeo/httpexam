@@ -1,8 +1,13 @@
 ﻿using EmbedIO;
+<<<<<<< HEAD
 using EmbedIO.Actions;
 using EmbedIO.Routing;
 using Swan.Formatters;
 using Swan.Logging;
+=======
+using EmbedIO.Routing;
+using Swan.Formatters;
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
 using Swan.Net;
 using System;
 using System.Collections.Generic;
@@ -13,6 +18,7 @@ using System.Threading.Tasks;
 
 namespace httpexam
 {
+<<<<<<< HEAD
     public class Program
     {
         public IWebServer WebServer { get; private set; }
@@ -54,6 +60,21 @@ namespace httpexam
             server.StateChanged += (s, e) => $"WebServer New State - {e.NewState}".Info();
 
             return server;
+=======
+    public class Program 
+    {
+        public IWebServer WebServer { get; private set; }
+
+        static void Main(string[] args)
+        {
+            Register();
+        }
+
+        private void Register()
+        {
+            WebServer = new WebServer("https://localhost:8080")
+               .WithWebApi()
+>>>>>>> b4a4f57564fdf3d99bc42b82d8fb281572c41343
         }
     }
 }
